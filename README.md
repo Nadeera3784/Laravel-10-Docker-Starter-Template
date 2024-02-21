@@ -1,5 +1,5 @@
 # Laravel 10 Docker Starter Template
-Laravel 10 Starter template using PHP 8.1, nginx, redis, and mysql:8.0.26, MailHog
+Laravel 10 Starter template using PHP 8.1, Nginx, Redis, MailHog and MySQL 
 
 ## Features
 * [Docker](https://www.docker.com/)
@@ -19,35 +19,39 @@ Laravel 10 Starter template using PHP 8.1, nginx, redis, and mysql:8.0.26, MailH
 - Download and Install [Docker](https://docs.docker.com/engine/install/).
 
 ### Installation
-#### 1. Clone this project
+#### 0. Clone this project
 
-#### 2. Create `.env` file from `.env.example` in root directory and update it.
+#### 1. Create `.env` file from `.env.example` in root directory and update it.
 The given configuration will be used by Docker to build the containers.  
 
-#### 3. Run command `docker compose build` on your terminal
+#### 2. Run command `docker compose build` on your terminal
 This command will build Docker Compose containers.
 
-#### 4. Run command `docker compose up -d ` on your terminal
+#### 3. Run command `docker compose up -d ` on your terminal
 This command will run Docker Compose containers.
 
-#### 5. Run command `docker exec -it {phpcontainerid} bash` on your terminal. with 
+#### 4. Run command `docker exec -it {phpcontainerid} bash` on your terminal. with 
 This command will open PHP container terminal.
 You can see the list of containers with "docker ps"
 
-#### 6. Generate App Key `php artisan key:generate`
+#### 5. Generate App Key `php artisan key:generate`
 This will update the app key in .env
 
-#### 7. Install PHP dependancies `composer install`
+#### 6. Install PHP dependancies `composer install`
 This will install PHP dependancies
 
-#### 8. Run command `docker exec -it {nodejscontainerid} bash` on your terminal. with 
+#### 7. Run command `docker exec -it {nodejscontainerid} bash` on your terminal. with 
 This command will open NodeJS container terminal.
 
-#### 9. Install NPM dependancies `npm install`
+#### 8. Install NPM dependancies `npm install`
 This will install NPM dependancies
 
-#### 10. Run vite Dev server `npm run dev`
+#### 9. Run vite Dev server `npm run dev`
 This will start vite Dev server
 
-#### Go to [http://localhost/](http://localhost/)
+####  Go to [http://localhost/](http://localhost)
 This action will open Laravel application in a web browser.  
+
+#### To build js files run `npm run build`
+
+#### PHP code style fixer  `./vendor/bin/pint app/Models`
