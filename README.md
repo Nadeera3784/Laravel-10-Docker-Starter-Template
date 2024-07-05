@@ -34,11 +34,11 @@ This command will run Docker Compose containers.
 This command will open PHP container terminal.
 You can see the list of containers with "docker ps"
 
-#### 5. Generate App Key `php artisan key:generate`
-This will update the app key in .env
-
-#### 6. Install PHP dependancies `composer install`
+#### 5. Install PHP dependancies `composer install`
 This will install PHP dependancies
+
+#### 6. Generate App Key `php artisan key:generate`
+This will update the app key in .env
 
 #### 7. Run command `docker exec -it {nodejscontainerid} bash` on your terminal. with 
 This command will open NodeJS container terminal.
